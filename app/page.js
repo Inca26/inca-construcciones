@@ -30,7 +30,9 @@ export default async function Home() {
 
       <header className="sheet-nav">
         <a href="#a00" className="brand">
-          <span className="brand-badge"><span>IC</span></span>
+          <span className="brand-badge">
+            <img src="/logo.png" alt="INCA Construcciones" />
+          </span>
           <span className="brand-text">
             <span className="name">{settings.company_name || 'INCA Construcciones'}</span>
             <span className="tag">{settings.tagline || 'Edificando tu futuro'}</span>
@@ -108,11 +110,11 @@ export default async function Home() {
               : 'Estamos preparando la galería de proyectos terminados. Mientras tanto, así son los materiales y acabados que dominamos en cada obra.'}
           </p>
           <div className="grid-materials" data-reveal>
-            <div className="swatch"><div className="swatch-tex tex-concreto"></div><div className="swatch-label">Concreto</div></div>
-            <div className="swatch"><div className="swatch-tex tex-ladrillo"></div><div className="swatch-label">Tabique</div></div>
-            <div className="swatch"><div className="swatch-tex tex-azulejo"></div><div className="swatch-label">Azulejo</div></div>
-            <div className="swatch"><div className="swatch-tex tex-madera"></div><div className="swatch-label">Madera</div></div>
-            <div className="swatch"><div className="swatch-tex tex-acero"></div><div className="swatch-label">Acero</div></div>
+            <div className="swatch"><img className="swatch-photo" src="/materials/concreto.jpg" alt="Concreto en obra" /><div className="swatch-label">Concreto</div></div>
+            <div className="swatch"><img className="swatch-photo" src="/materials/tabique.jpg" alt="Muro de tabique en construcción" /><div className="swatch-label">Tabique</div></div>
+            <div className="swatch"><img className="swatch-photo" src="/materials/azulejo.jpg" alt="Colocación de azulejo" /><div className="swatch-label">Azulejo</div></div>
+            <div className="swatch"><img className="swatch-photo" src="/materials/madera.jpg" alt="Trabajo en madera" /><div className="swatch-label">Madera</div></div>
+            <div className="swatch"><img className="swatch-photo" src="/materials/acero.jpg" alt="Herramientas de construcción" /><div className="swatch-label">Acero</div></div>
           </div>
         </div>
       </section>

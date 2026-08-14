@@ -1,0 +1,18 @@
+Pon aqui estas 5 fotos, con estos nombres EXACTOS (todo minusculas):
+
+concreto.jpg   -> concreto vaciandose o aplanandose en obra
+tabique.jpg    -> muro o casa de tabique/ladrillo en construccion
+azulejo.jpg    -> colocacion de azulejo (piso o pared)
+madera.jpg     -> trabajo en madera / carpinteria
+acero.jpg      -> herramientas de construccion
+
+Recomendaciones:
+- Formato horizontal (mas ancho que alto)
+- Al menos 800x600 px
+- Menos de 500 KB cada una para que cargue rapido
+  (si pesan mas, cualquier compresor de imagenes gratis en linea sirve,
+  por ejemplo tinypng.com)
+
+Cuando ya tengas las 5 aqui, sube este ZIP completo a la carpeta
+inca-site del proyecto (junto con las carpetas app, components, etc.)
+y haz el git add / commit / push de siempre.
