@@ -87,28 +87,30 @@ ul,ol{margin:0;padding:0;list-style:none;}
   display:flex;align-items:center;gap:1.4rem;
   padding:.75rem var(--gutter);
 }
-.brand{display:flex;align-items:center;gap:.65rem;flex-shrink:0;}
+.brand{display:flex;align-items:center;gap:.7rem;flex-shrink:0;}
 .brand-badge{
-  width:34px;height:34px;border:1.6px solid var(--ink);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;
+  width:38px;height:38px;border-radius:10px;
+  background:var(--rust);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:2px 2px 0 var(--ink);
 }
-.brand-badge::before{content:"";position:absolute;width:1px;height:10px;background:var(--ink);opacity:.5;}
-.brand-badge::after{content:"";position:absolute;width:10px;height:1px;background:var(--ink);opacity:.5;}
-.brand-badge span{font-family:var(--display);font-weight:800;font-size:.8rem;}
-.brand-text{line-height:1.1;}
-.brand-text .name{font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:.02em;text-transform:uppercase;}
-.brand-text .tag{font-family:var(--mono);font-size:.62rem;color:var(--ink-soft);letter-spacing:.04em;}
+.brand-badge span{
+  font-family:var(--display);font-weight:900;font-size:1.05rem;
+  color:var(--paper-hi);letter-spacing:-.02em;
+}
+.brand-text{line-height:1.15;}
+.brand-text .name{font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:.01em;text-transform:uppercase;}
+.brand-text .tag{font-family:var(--mono);font-size:.64rem;color:var(--rust);letter-spacing:.03em;}
 
 .tabs{display:flex;overflow-x:auto;gap:0;scrollbar-width:none;}
 .tabs::-webkit-scrollbar{display:none;}
 .tab{
-  font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;
-  padding:.55rem .9rem;white-space:nowrap;border-left:1px solid var(--line);
+  font-family:var(--mono);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+  font-weight:600;
+  padding:.6rem 1rem;white-space:nowrap;border-left:1px solid var(--line);
   color:var(--ink-soft);transition:background .15s,color .15s;
 }
-.tab b{color:var(--ink);font-weight:600;}
 .tab.active{background:var(--blue-deep);color:var(--paper);}
-.tab.active b{color:var(--paper);}
 .tab:hover{background:var(--paper-dim);}
 .tab.active:hover{background:var(--blue-deep);}
 

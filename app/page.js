@@ -30,19 +30,19 @@ export default async function Home() {
 
       <header className="sheet-nav">
         <a href="#a00" className="brand">
-          <span className="brand-badge"><span>I</span></span>
+          <span className="brand-badge"><span>IC</span></span>
           <span className="brand-text">
             <span className="name">{settings.company_name || 'INCA Construcciones'}</span>
             <span className="tag">{settings.tagline || 'Edificando tu futuro'}</span>
           </span>
         </a>
         <nav className="tabs">
-          <a href="#a00" className="tab active" data-tab><b>A—00</b> Inicio</a>
-          <a href="#a01" className="tab" data-tab><b>A—01</b> Especialidades</a>
-          <a href="#a02" className="tab" data-tab><b>A—02</b> Materiales</a>
-          <a href="#a03" className="tab" data-tab><b>A—03</b> Proceso</a>
-          <a href="#a04" className="tab" data-tab><b>A—04</b> Notas</a>
-          <a href="#a05" className="tab" data-tab><b>A—05</b> Contacto</a>
+          <a href="#a00" className="tab active" data-tab>Inicio</a>
+          <a href="#a01" className="tab" data-tab>Especialidades</a>
+          <a href="#a02" className="tab" data-tab>Materiales</a>
+          <a href="#a03" className="tab" data-tab>Proceso</a>
+          <a href="#a04" className="tab" data-tab>Notas</a>
+          <a href="#a05" className="tab" data-tab>Contacto</a>
         </nav>
       </header>
 
@@ -51,7 +51,6 @@ export default async function Home() {
         <span className="reg tl"></span><span className="reg tr"></span>
         <span className="reg bl"></span><span className="reg br"></span>
         <div className="container">
-          <p className="eyebrow">Hoja A—00 · Portada</p>
           <h1 className="hero-title">
             {settings.hero_title || 'Construimos sobre planos, no sobre supuestos.'}
           </h1>
@@ -84,7 +83,7 @@ export default async function Home() {
       {/* A01 — SERVICIOS */}
       <section id="a01" className="sheet servicios">
         <div className="container">
-          <p className="eyebrow">Hoja A—01 · Especialidades</p>
+          <p className="eyebrow">Especialidades</p>
           <h2 className="sheet-title" data-reveal>Lo que hacemos</h2>
           <div className="grid-services" data-reveal>
             {services.map((s) => (
@@ -101,7 +100,7 @@ export default async function Home() {
       {/* A02 — MATERIALES */}
       <section id="a02" className="sheet materiales">
         <div className="container">
-          <p className="eyebrow">Hoja A—02 · Materiales</p>
+          <p className="eyebrow">Materiales</p>
           <h2 className="sheet-title" data-reveal>Con lo que trabajamos</h2>
           <p className="materials-intro" data-reveal>
             {gallery.length > 0
@@ -140,7 +139,7 @@ export default async function Home() {
       <section id="a03" className="sheet proceso dark">
         <span className="reg tl"></span><span className="reg tr"></span>
         <div className="container">
-          <p className="eyebrow">Hoja A—03 · Proceso</p>
+          <p className="eyebrow">Proceso</p>
           <h2 className="sheet-title" data-reveal>Cómo trabajamos</h2>
           <div className="process-line" data-reveal>
             {process.map((p, i) => (
@@ -157,7 +156,7 @@ export default async function Home() {
       {/* A04 — CURIOSIDADES */}
       <section id="a04" className="sheet curiosidades">
         <div className="container">
-          <p className="eyebrow">Hoja A—04 · Notas al margen</p>
+          <p className="eyebrow">Notas al margen</p>
           <h2 className="sheet-title" data-reveal>Curiosidades de construcción</h2>
           <div className="notes-grid" data-reveal>
             {curiosities.map((c, i) => (
@@ -175,7 +174,7 @@ export default async function Home() {
         <span className="reg tl"></span><span className="reg tr"></span>
         <span className="reg bl"></span><span className="reg br"></span>
         <div className="container">
-          <p className="eyebrow">Hoja A—05 · Contacto</p>
+          <p className="eyebrow">Contacto</p>
           <h2 className="sheet-title">Hablemos de tu proyecto</h2>
           <p className="contacto-sub">
             Cuéntanos qué necesitas construir, remodelar o reparar y te respondemos por WhatsApp.
