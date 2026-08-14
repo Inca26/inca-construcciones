@@ -87,10 +87,16 @@ ul,ol{margin:0;padding:0;list-style:none;}
   display:flex;align-items:center;gap:1.4rem;
   padding:.75rem var(--gutter);
 }
-.brand{display:flex;align-items:center;gap:.7rem;flex-shrink:0;}
+.brand{display:flex;align-items:center;gap:.85rem;flex-shrink:0;}
 .brand-badge{
-  width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;
-  box-shadow:2px 2px 0 var(--ink);
+  width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;
+  border:2.5px solid var(--rust);
+  box-shadow:0 0 0 3px var(--paper), 0 0 20px rgba(184,71,31,.5), 3px 3px 0 var(--ink);
+  transition:transform .3s cubic-bezier(.2,.8,.3,1.3), box-shadow .3s ease;
+}
+.brand-badge:hover{
+  transform:scale(1.1) rotate(-4deg);
+  box-shadow:0 0 0 3px var(--paper), 0 0 30px rgba(184,71,31,.75), 3px 3px 0 var(--ink);
 }
 .brand-badge img{width:100%;height:100%;object-fit:cover;display:block;}
 .brand-text{line-height:1.15;}
